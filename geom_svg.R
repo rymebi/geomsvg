@@ -288,7 +288,7 @@ defineGeom <- function(n_path_obj_list, class_name, custom_grob, env = parent.en
             fill_aes_name,
             scale_is_discrete = TRUE)
         else
-          ggplot2:::scale_fill_qualitative(..., type = type),
+          ggplot2:::scale_fill_qualitative(..., type = type, aesthetics = fill_aes_name),
       envir = env
     )
 
